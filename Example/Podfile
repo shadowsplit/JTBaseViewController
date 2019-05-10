@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'JTBaseViewController_Example' do
+  pod 'JTBaseViewController', :path => '../'
+
+  target 'JTBaseViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
