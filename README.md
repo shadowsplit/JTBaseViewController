@@ -20,6 +20,9 @@ it, simply add the following line to your Podfile:
 pod 'JTBaseViewController'
 ```
 
+## Project
+this repo project at [ShadowSplit][https://github.com/orgs/shadowsplit/projects/1]
+
 ## Author
 
 JohnTsaii, caijingzhuang@gmail.com
