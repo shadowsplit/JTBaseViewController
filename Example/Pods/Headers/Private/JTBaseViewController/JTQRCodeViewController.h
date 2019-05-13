@@ -1,0 +1,1 @@
+../../../../../JTBaseViewController/Classes/JTQRCodeViewController.h

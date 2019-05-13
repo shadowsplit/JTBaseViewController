@@ -9,6 +9,7 @@
 #import "JTViewController.h"
 #import "JTSegmentedViewController.h"
 #import "JTTableViewController.h"
+#import "JTQRCodeViewController.h"
 
 @interface JTViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -68,6 +69,8 @@
         cell.textLabel.text = @"segmentVC";
     } else if (indexPath.row == 1) {
         cell.textLabel.text = @"tableViewVC";
+    } else if (indexPath.row == 2) {
+        cell.textLabel.text = @"qrCodeVC";
     }
 }
 
@@ -79,6 +82,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
         [self pushToSegVC];
     } else if (indexPath.row == 1) {
         [self pushToTVVC];
+    } else if (indexPath.row == 2) {
+        [self pushToQRVC];
     }
 }
 
@@ -107,6 +112,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     JTTableViewController *vc = [[JTTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
     vc.needHeaderRefresh = YES;
 //    vc.needFooterRefresh = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)pushToQRVC {
+    JTQRCodeViewController *vc = [[JTQRCodeViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
