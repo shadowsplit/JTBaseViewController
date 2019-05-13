@@ -7,9 +7,8 @@
 //
 
 #import "JTViewController.h"
-#import "JTSegmentedViewController.h"
-#import "JTTableViewController.h"
-#import "JTQRCodeViewController.h"
+
+#import "JTBaseviewController.h"
 
 @interface JTViewController () <UITableViewDataSource, UITableViewDelegate>
 
