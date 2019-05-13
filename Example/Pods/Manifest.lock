@@ -1,0 +1,22 @@
+PODS:
+  - HMSegmentedControl (1.5.5)
+  - JTBaseViewController (0.1.0):
+    - HMSegmentedControl
+    - MJRefresh
+  - MJRefresh (3.1.15.7)
+
+DEPENDENCIES:
+  - JTBaseViewController (from `../`)
+
+EXTERNAL SOURCES:
+  JTBaseViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
+  JTBaseViewController: aa50524285ffa8e300ab4d4985c74d1c669adf26
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+
+PODFILE CHECKSUM: e5b7ba60e7464fd27d1c01130166b2cf6dfc956c
+
+COCOAPODS: 1.4.0

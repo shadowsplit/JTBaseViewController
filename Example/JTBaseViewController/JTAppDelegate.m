@@ -7,12 +7,18 @@
 //
 
 #import "JTAppDelegate.h"
+#import "JTViewController.h"
 
 @implementation JTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[JTViewController alloc] init]];
+    self.window.rootViewController = nav;
+    [nav.navigationBar setTranslucent:NO];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

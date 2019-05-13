@@ -1,0 +1,1 @@
+../../../../../JTBaseViewController/Classes/JTTableViewController.h

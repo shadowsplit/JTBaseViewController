@@ -1,0 +1,6 @@
+framework module JTBaseViewController {
+  umbrella header "JTBaseViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
